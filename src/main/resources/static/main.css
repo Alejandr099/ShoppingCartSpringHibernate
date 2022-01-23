@@ -1,0 +1,27 @@
+.item {
+    border: 1px solid black;
+    margin: 10px;
+    width: 700px;
+    padding: 10px;
+}
+
+.item .name {
+    font-size: 22px;
+}
+
+
+.item .price {
+    font-size: 15px;
+    display: inline-block;
+}
+
+
+.item .quantity {
+    font-size: 15px;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.item div {
+    margin: 10px;
+}
