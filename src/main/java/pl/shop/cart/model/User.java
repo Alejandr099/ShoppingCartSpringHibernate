@@ -2,7 +2,8 @@ package pl.shop.cart.model;
 
 import javax.persistence.*;
 
-@Entity(name = "tuser")
+@Table(name = "tuser")
+@Entity
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

@@ -6,5 +6,9 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import pl.shop.cart.model.User;
 
-public interface ItemEntity {
+@RepositoryRestResource(collectionResourceRel = "user", path = "user")
+public interface UserRepoEntity extends PagingAndSortingRepository<User, Long> {
+
+    List<User> findByfirstName(@Param("name") String name);
+
 }
