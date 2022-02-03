@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity(name = "tuser")
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     int id;
     private String name;
     private String surname;

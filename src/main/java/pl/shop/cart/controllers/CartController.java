@@ -6,12 +6,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 import pl.shop.cart.service.ICartService;
 import pl.shop.cart.session.SessionObject;
 
 import javax.annotation.Resource;
 
-@Controller
+@RestController
 @RequestMapping(value = "/cart")
 public class CartController {
 

@@ -5,12 +5,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 import pl.shop.cart.service.IItemService;
 import pl.shop.cart.session.SessionObject;
 
 import javax.annotation.Resource;
 
-@Controller
+@RestController
 public class CommonController {
 
     @Autowired

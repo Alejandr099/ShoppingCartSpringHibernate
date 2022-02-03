@@ -1,16 +1,16 @@
 package pl.shop.cart.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 import pl.shop.cart.service.IOrderService;
 import pl.shop.cart.session.SessionObject;
 
 import javax.annotation.Resource;
 
-@Controller
+@RestController
 public class OrderController {
 
     @Autowired
